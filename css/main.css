@@ -294,8 +294,15 @@ Navbar
 .nav-links{
 display: flex;
 flex-direction: column;
+
+height: 0;
+transition: var(--transition);
+overflow: hidden;
 }
 
+.show-links{
+  height: 310px;
+}
 .nav-link{
   display: block;
   text-align: center;
